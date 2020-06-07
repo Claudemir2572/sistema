@@ -16,4 +16,8 @@ public class Carro {
 	public void setModelo(String modelo) {
 		this.modelo = modelo;
 	}
+	@Override
+	public String toString() {
+		return "Carro [placa=" + placa + ", modelo=" + modelo + "]";
+	}
 }

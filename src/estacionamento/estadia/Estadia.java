@@ -10,6 +10,7 @@ public class Estadia {
 	private Carro carro;
 	private LocalTime entrada;
 	private LocalTime saida;
+	private boolean isRemovido;
 	
 	public LocalTime getEntrada() {
 		return entrada;
@@ -29,5 +30,16 @@ public class Estadia {
 	public void setCarro(Carro carro) {
 		this.carro = carro;
 	}
-
+	
+	public boolean isRemovido() {
+		return isRemovido;
+	}
+	public void setRemovido(boolean isRemovido) {
+		this.isRemovido = isRemovido;
+	}
+	@Override
+	public String toString() {
+		return "Estadia [carro=" + carro + ", entrada=" + entrada + ", saida=" + saida + ", removido=" + isRemovido + "]";
+	}
 }
+
