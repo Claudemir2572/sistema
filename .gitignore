@@ -26,3 +26,4 @@ hs_err_pid*
 .project
 /bin
 .settings
+!gson-2.8.2.jar
