@@ -1,15 +1,14 @@
 package estacionamento;
 
 import java.io.IOException;
-import java.util.Scanner;
+
 import estacionamento.gerenciamento.Gerenciamento;
+import estacionamento.repository.Repositorio;
 
-public class Estacionamento {
+public class Estacionamento extends Repositorio {
 	
-	public static Scanner scanner = new Scanner(System.in);
-	public static int opcao = 0;
-
 	public static void main(String[] args) throws IOException {
+		le();
 		header();
 		menu();
 	}
